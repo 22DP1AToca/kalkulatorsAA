@@ -1,105 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
 
-.calculator {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 270px;
-}
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #121212; /* Dark background */
+        color: #fff; /* Light text color */
+    }
 
-input[type="text"] {
-    user-select: none;
-    width: 100%;
-    height: 40px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-align: right;
-    padding: 5px;
-    outline: none;
-}
+    .calculator {
+        background-color: #1e1e1e; /* Dark background for the calculator */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Strong shadow for a raised look */
+        text-align: center;
+        width: 270px;
+    }
 
-input:focus {
-    background-color: white; /* Prevent background color change */
-    border: 1px solid #000000;  /* Keep the border color the same */
-  }
+    input[type="text"] {
+        user-select: none;
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: right;
+        padding: 5px;
+        outline: none;
+        background-color: #333; /* Dark background for the input */
+        color: #fff; /* Light text color */
+        border: 1px solid #333; /* Dark border */
+    }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-}
+    input:focus {
+        background-color: #333; /* Keep the input background dark */
+        border: 1px solid #333;  /* Light border when focused */
+    }
 
-.button {
-    font-size: 22px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+    }
 
-#action-button{
-    background-color: #e0922a;
-    border: 1px solid #c97c24;
-}
+    .button {
+        font-size: 22px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #444; /* Dark buttons */
+        border: 1px solid #444; /* Dark border for buttons */
+        border-radius: 5px;
+        color: #fff; /* White text on buttons */
+        transition: background-color 0.3s;
+    }
 
-#action-button:hover{
-    background-color: #c97c24;
-}
+    #action-button{
+        background-color: #e0922a; /* Orange color for action button */
+        border: 1px solid #c97c24;
+    }
 
-.button:hover {
-    background-color: #ddd;
-}
+    #action-button:hover{
+        background-color: #c97c24; /* Darker orange on hover */
+    }
 
-.history {
-    margin-top: 20px;
-    text-align: left;
-}
+    .button:hover {
+        background-color: #555; /* Slightly lighter background on hover */
+    }
 
-.history h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+    .history {
+        margin-top: 20px;
+        text-align: left;
+    }
 
-.history ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .history h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff; /* Light text for history header */
+    }
 
-.history ul li {
-    background-color: #f9f9f9;
-    padding: 8px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-}
+    .history ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-.history ul li button {
-    background-color: #ff6b6b;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
+    .history ul li {
+        background-color: #333; /* Dark background for history list items */
+        padding: 8px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.history ul li button:hover {
-    background-color: #ff4d4d;
-}
+    .history ul li button {
+        background-color: #ff6b6b; /* Red for delete button */
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 
-button:focus {
-    outline: none;
-}
+    .history ul li button:hover {
+        background-color: #ff4d4d; /* Darker red on hover */
+    }
+
+    button:focus {
+        outline: none; /* Remove outline on focus */
+    }
+
